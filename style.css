@@ -17,11 +17,11 @@ h1{
 background-color: invisible;
 color: white;
 text-align: center;
-font-size: 400%;
+font-size: 2.5em;
 }
 .wallpaper {
     background-image: url('background.jpg');
-    height: 110vh;
+    height: 100%;
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -58,7 +58,7 @@ fieldset{
     display: flex;
     text-align: center;
     background-color: #4e4e4e77;
-    font-size: 200%;
+    font-size: 1.2em;
 }
 
 
@@ -72,7 +72,7 @@ fieldset{
 }
 .text{
     background-color: #4e4e4eae;
-    font-size: 200%;
+    font-size: 1.2em;
 }
 .navi ul li a{
     color: black;
