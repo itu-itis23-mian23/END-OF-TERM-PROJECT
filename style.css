@@ -97,4 +97,10 @@ button{
 button:hover{
     background-color: #4d4d4da0;
 }
+#personal-info img{
+    height: auto;
+    width: 25%;
+    margin: 10px;
+    border-radius: 10%;
+}
 
