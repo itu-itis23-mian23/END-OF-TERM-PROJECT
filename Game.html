@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMORY GAME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wallpaper">
+        <h>Game Page</h>
+        <h1>MEMORY GAME</h1>
+
+        <div class="navi">
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="Game.html">GAME</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="text">
+            <p>
+                Unscramble shuffled letters, guess the words in order that they are shown, and conquer the ultimate linguistic puzzle.
+            </p>
+        </div>
+
+
+                <div>
+                    <button onclick="startGame()">Start Game</button>
+                    <button onclick="restartGame()">Restart Game</button>
+                </div>
+          <p id="score-display">Score: 0</p>
+
+        <section id="memory-game">
+            <div class="game">
+                <div id="MainGame">
+                    <img src="Z.svg" alt="Z" class="cards" onclick="selectCard(0)">
+                    <img src="A.svg" alt="A" class="cards" onclick="selectCard(1)">
+                    <img src="I.svg" alt="I" class="cards" onclick="selectCard(2)">
+                    <img src="N.svg" alt="N" class="cards" onclick="selectCard(3)">
+                    <img src="3.svg" alt="3" class="cards" onclick="selectCard(4)">
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
