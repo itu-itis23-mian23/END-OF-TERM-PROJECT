@@ -101,6 +101,7 @@ function selectCard(index) {
      if (!gameStarted)
         return;
     uncoverCard(index);
+
 }
 
 function resetCards() {
@@ -124,41 +125,3 @@ function resetGame() {
     }
 }
 
-function startGame() {
-    selectedImages = [];
-    score = 0;
-    gameStarted = true;
-
-    shuffledImages = shuffle(imagePaths.slice());
-
-    displayImages();
-
-    disableClickEvents();
-
-    setTimeout(() => {
-        coverImages();
-        enableClickEvents();
-    }, 2000);
-}
-
-function coverImages() {
-    const cards = document.querySelectorAll('.cards');
-    cards.forEach((card, index) => {
-        card.src = ('cover.png');
-        card.classList.remove('flipped');
-    });
-}
-
-function disableClickEvents() {
-    const cards = document.querySelectorAll('.cards');
-    cards.forEach((card) => {
-        card.onclick = null;
-    });
-}
-
-function enableClickEvents() {
-    const cards = document.querySelectorAll('.cards');
-    cards.forEach((card, index) => {
-        card.onclick = () => selectCard(index);
-    });
-}
